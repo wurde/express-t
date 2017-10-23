@@ -1,0 +1,16 @@
+{
+  "name": "express-t",
+  "version": "0.1.0",
+  "description": "I18n for Express apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "locales"
+  ],
+  "author": "Andy Bettisworth <andy@accreu.com>",
+  "license": "MIT"
+}
