@@ -1,6 +1,22 @@
 ## Express-t (Not Complete)
 
-I18n for Express apps.
+Helper method for translations.
+
+## Getting started
+
+First add `express-t` to your dependencies. Then assign the helper function
+to an app local that'll be used within your views.
+
+./package.json
+
+    "dependencies": {
+      "express-t": "1"
+    }
+
+./config/application.js
+
+    const translate = require('express-t')
+    app.locals.t = translate
 
 ## Locales
 
