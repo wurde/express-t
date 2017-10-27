@@ -12,6 +12,10 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
+* 1 major enhancement:
+
+  * deps: added mocha as test runner
+
 ## 2017-10-23, Version 0.1.0
 
 * 1 minor enhancement:
