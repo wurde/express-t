@@ -1,6 +1,9 @@
 ## Express-t (Not Complete)
 
-Helper method for translations.
+Helper method for translations. It has one concern; look up translations
+inside JSON-formatted locale files. By default it'll lookup files that match
+`./config/locales/*.json`, but you can change that. For keys it uses a
+dotted-notation, see <b>Adding locales</b> below for specifics.
 
 ## Getting started
 
@@ -18,9 +21,11 @@ to an app local that'll be used within your views.
     const translate = require('express-t')
     app.locals.t = translate
 
-## Locales
+## Adding locales
 
-Add language support by placing translations into a JSON file named using the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) standard of two-letter language codes.
+To add language support just place translations into a JSON file named using
+the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) standard
+of two-letter language codes.
 
     ls -la ./config/locales
     #=> ./config/locales/en.json
@@ -47,6 +52,13 @@ Reference translations inside your views using dotted notation.
     #=>    "welcome": {
     #=>      "greeting": "Hello, friend!",
     #=>      ...
+
+## Customization
+
+Change the location of the locale files.
+
+    const t = require('express-t')
+    t.locales_path = '/locales'
 
 ## Changelog
 
