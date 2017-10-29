@@ -2,8 +2,19 @@
 
 Helper method for translations. It has one concern; look up translations
 inside JSON-formatted locale files. By default it'll lookup files that match
-`./config/locales/*.json`, but you can change that. For keys it uses a
-dotted-notation, see <b>Adding locales</b> below for specifics.
+`./config/locales/*.json`. For keys it uses a dotted-notation such that
+`'model.posts.name'` will reference the value for a key `name` which is
+a member of object `posts` which is a member of object `model`.
+
+    {
+      "en": {
+        "model": {
+          "posts": {
+            "name": "Posts"
+          }
+        }
+      }
+    }
 
 ## Getting started
 
