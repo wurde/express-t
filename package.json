@@ -12,8 +12,8 @@
     "locales"
   ],
   "devDependencies": {
-    "mocha": "3"
+    "mocha": "4"
   },
-  "author": "Andy Bettisworth <andy@accreu.com>",
+  "author": "Andy Bettisworth <andy@accreu.com> https://andybettisworth.com",
   "license": "MIT"
 }
