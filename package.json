@@ -4,7 +4,8 @@
   "description": "I18n for Express apps.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --no-colors",
+    "test-watch": "mocha --watch --no-colors"
   },
   "keywords": [
     "i18n",
@@ -12,7 +13,9 @@
     "locales"
   ],
   "devDependencies": {
-    "mocha": "4"
+    "eslint": "^4.12.0",
+    "jsdoc": "^3.5.5",
+    "mocha": "^4.0.1"
   },
   "author": "Andy Bettisworth <andy@accreu.com> https://andybettisworth.com",
   "license": "MIT"

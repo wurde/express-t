@@ -12,9 +12,11 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
-* 1 major enhancement:
+* 3 major enhancements:
 
   * deps: added mocha as test runner
+  * deps: add jsdoc
+  * deps: add eslint
 
 ## 2017-10-23, Version 0.1.0
 
