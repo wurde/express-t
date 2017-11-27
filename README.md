@@ -6,15 +6,17 @@ inside JSON-formatted locale files. By default it'll lookup files that match
 `'model.posts.name'` will reference the value for a key `name` which is
 a member of object `posts` which is a member of object `model`.
 
-    {
-      "en": {
-        "model": {
-          "posts": {
-            "name": "Posts"
-          }
-        }
+```json
+{
+  "en": {
+    "model": {
+      "posts": {
+        "name": "Posts"
       }
     }
+  }
+}
+```
 
 ## Getting started
 
@@ -23,53 +25,66 @@ to an app local that'll be used within your views.
 
 ./package.json
 
-    "dependencies": {
-      "express-t": "1"
-    }
+```json
+"dependencies": {
+  "express-t": "1"
+}
+```
 
 ./config/application.js
 
-    const translate = require('express-t')
-    app.locals.t = translate
-
+```javascript
+const translate = require('express-t')
+app.locals.t = translate
+```
 ## Adding locales
 
 To add language support just place translations into a JSON file named using
 the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) standard
 of two-letter language codes.
 
-    ls -la ./config/locales
-    #=> ./config/locales/en.json
-    #=> ./config/locales/es.json
-    #=> ./config/locales/fr.json
-    #=> ...
+```bash
+ls -la ./config/locales
+#=> ./config/locales/en.json
+#=> ./config/locales/es.json
+#=> ./config/locales/fr.json
+#=> ...
+```
 
 Place configuration inside your `locale.js` initializer file.
 
-    cat ./config/initializers/locale.js
-    #=> module.exports = {
-    #=>   available_locales: ['de', 'en', 'es', 'fr', 'it', 'ja', 'pt'],
-    #=>   default_locale: 'en',
-    #=> }
+```bash
+cat ./config/initializers/locale.js
+#=> module.exports = {
+#=>   available_locales: ['de', 'en', 'es', 'fr', 'it', 'ja', 'pt'],
+#=>   default_locale: 'en',
+#=> }
+```
 
 Reference translations inside your views using dotted notation.
 
-    cat ./app/views/welcome/hello.html.ejs
-    #=> <h1><%- t(locale, 'welcome.greeting') %></h1>
+```bash
+cat ./app/views/welcome/hello.html.ejs
+#=> <h1><%- t(locale, 'welcome.greeting') %></h1>
+```
 
-    cat ./config/locales/en.json
-    #=>{
-    #=>  "en": {
-    #=>    "welcome": {
-    #=>      "greeting": "Hello, friend!",
-    #=>      ...
+```bash
+cat ./config/locales/en.json
+#=>{
+#=>  "en": {
+#=>    "welcome": {
+#=>      "greeting": "Hello, friend!",
+#=>      ...
+```
 
 ## Customization
 
 Change the location of the locale files.
 
-    const t = require('express-t')
-    t.locales_path = '/locales'
+```javascript
+const t = require('express-t')
+t.locales_path = '/locales'
+```
 
 ## Changelog
 
