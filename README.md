@@ -29,7 +29,7 @@ $ npm install express-t --save
 ```
 
 ```javascript
-./config/application.js
+./config/app.js
 const translate = require('express-t')
 app.locals.t = translate
 ```

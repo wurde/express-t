@@ -14,6 +14,12 @@ Changes are categorized as follows:
 
 ## 2017-11-27, Version 0.2.0
 
+* 1 minor enhancement:
+
+  * Use a constructor
+
+## 2017-11-27, Version 0.2.0
+
 * 4 major enhancements:
 
   * deps: added mocha as test runner

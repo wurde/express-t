@@ -7,12 +7,16 @@
 const fs = require('fs')
 const path = require('path')
 
-module.exports = (app) => {
+/**
+ * Express t() helper constructor
+ */
+
+function express_t(base_path) {
   /**
    * Constants
    */
 
-  const locales_path = path.join(app.locals.base, '/config/locales')
+  const locales_path = path.join(base_path, '/config/locales')
   const locales = {}
 
   /**
@@ -51,3 +55,9 @@ module.exports = (app) => {
     return x
   }
 }
+
+/**
+ * Exports constructor
+ */
+
+module.exports = express_t
