@@ -12,11 +12,12 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
-## 2017-11-27, Version 0.2.0
+## 2017-11-27, Version 0.3.0
 
-* 1 minor enhancement:
+* 2 minor enhancements:
 
   * Use a constructor
+  * Readme match implementation 
 
 ## 2017-11-27, Version 0.2.0
 
