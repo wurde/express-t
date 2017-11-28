@@ -7,6 +7,7 @@ inside JSON-formatted locale files. By default it'll lookup files that match
 a member of object `posts` which is a member of object `model`.
 
 ```json
+./config/locales/en.json
 {
   "en": {
     "model": {
@@ -23,17 +24,12 @@ a member of object `posts` which is a member of object `model`.
 First add `express-t` to your dependencies. Then assign the helper function
 to an app local that'll be used within your views.
 
-./package.json
-
-```json
-"dependencies": {
-  "express-t": "1"
-}
+```bash
+$ npm install express-t --save
 ```
 
-./config/application.js
-
 ```javascript
+./config/application.js
 const translate = require('express-t')
 app.locals.t = translate
 ```
