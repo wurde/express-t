@@ -22,7 +22,8 @@ a member of object `posts` which is a member of object `model`.
 ## Getting started
 
 First add `express-t` to your dependencies. Then assign the helper function
-to an app local that'll be used within your views.
+to an app local that'll be used within your views. Be sure to pass in the
+base path of your project.
 
 ```bash
 $ npm install express-t --save
@@ -30,9 +31,19 @@ $ npm install express-t --save
 
 ```javascript
 ./config/app.js
-const translate = require('express-t')
-app.locals.t = translate
+const express_t = require('express-t')
+const base = path.join(__dirname, '..')
+app.locals.t = express_t(base)
 ```
+
+```html
+./app/views/posts/index.html.ejs
+<h3>Model: <%- t(locale, 'model.posts.name') %></h3>
+<!-- en, 'Model: Posts' -->
+<!-- es, 'Model: Publicaciones' -->
+<!-- fr, 'Model: Postes' -->
+```
+
 ## Adding locales
 
 To add language support just place translations into a JSON file named using
