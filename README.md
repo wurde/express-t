@@ -1,4 +1,4 @@
-## Express-t (Not Complete)
+## express-t
 
 Helper method for translations. It has one concern; look up translations
 inside JSON-formatted locale files. By default it'll lookup files that match
