@@ -7,6 +7,18 @@
     "test": "mocha --no-colors",
     "test-watch": "mocha --watch --no-colors"
   },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE.txt",
+    "CHANGELOG.md",
+    "index.js",
+    "test.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wurde/express-t.git"
+  },
   "keywords": [
     "i18n",
     "internationalization",
@@ -17,6 +29,13 @@
     "jsdoc": "^3.5.5",
     "mocha": "^4.0.1"
   },
+  "engines": {
+    "node": ">= 8"
+  },
   "author": "Andy Bettisworth <andy@accreu.com> https://andybettisworth.com",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wurde/g-migration/issues"
+  },
+  "homepage": "https://github.com/wurde/g-migration#readme"
 }
