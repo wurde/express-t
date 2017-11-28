@@ -84,15 +84,6 @@ cat ./config/locales/en.json
 #=>      ...
 ```
 
-## Customization
-
-Change the location of the locale files.
-
-```javascript
-const t = require('express-t')
-t.locales_path = '/locales'
-```
-
 ## Changelog
 
 Get the project's history in [CHANGELOG.md](CHANGELOG.md).
