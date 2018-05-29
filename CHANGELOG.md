@@ -12,6 +12,8 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
+## 2018-05-29, Version 1.0.0
+
 * 3 minor enhancements:
 
   * deps: remove jsdoc

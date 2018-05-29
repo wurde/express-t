@@ -1,6 +1,6 @@
 {
   "name": "express-t",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "I18n for Express apps.",
   "main": "index.js",
   "scripts": {
