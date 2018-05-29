@@ -12,10 +12,11 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
-* 1 minor enhancements:
+* 3 minor enhancements:
 
   * deps: remove jsdoc
   * deps: update mocha 5.2.0
+  * deps: remove eslint
 
 ## 2017-11-27, Version 0.3.0
 

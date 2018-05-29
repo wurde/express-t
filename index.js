@@ -1,11 +1,11 @@
-'use strict'
+"use strict"
 
 /**
  * Dependencies
  */
 
-const fs = require('fs')
-const path = require('path')
+const fs = require("fs")
+const path = require("path")
 
 /**
  * Express t() helper constructor
@@ -16,7 +16,7 @@ function express_t(base_path) {
    * Constants
    */
 
-  const locales_path = path.join(base_path, '/config/locales')
+  const locales_path = path.join(base_path, "/config/locales")
   const locales = {}
 
   /**
