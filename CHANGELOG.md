@@ -12,12 +12,17 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
+* 1 minor enhancements:
+
+  * deps: remove jsdoc
+  * deps: update mocha 5.2.0
+
 ## 2017-11-27, Version 0.3.0
 
 * 2 minor enhancements:
 
   * Use a constructor
-  * Readme match implementation 
+  * Readme match implementation
 
 ## 2017-11-27, Version 0.2.0
 
