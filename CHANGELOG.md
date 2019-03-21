@@ -12,6 +12,11 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
+* 2 minor enhancements:
+
+  js: formatting changes
+  deps: replaced mocha with ava
+
 ## 2018-05-29, Version 1.0.0
 
 * 3 minor enhancements:
