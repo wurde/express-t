@@ -4,14 +4,12 @@
  * Dependencies
  */
 
-const assert = require('assert')
+const test = require('ava')
 
 /**
  * Assertions
  */
 
-describe("index.js", () => {
-  it("should have tests", () => {
-    assert.ok(true)
-  })
+test("You should write tests.", t => {
+  t.pass()
 })
