@@ -1,11 +1,11 @@
-"use strict"
+'use strict'
 
 /**
  * Dependencies
  */
 
-const fs = require("fs")
-const path = require("path")
+const fs = require('fs')
+const path = require('path')
 
 /**
  * Express t() helper constructor
