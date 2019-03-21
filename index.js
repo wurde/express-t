@@ -24,6 +24,7 @@ function express_t(base_path) {
    */
 
   const stats = fs.statSync(locales_path)
+
   if (!stats.isDirectory()) {
     throw new Error(`${locales_path} is not a directory.`)
   }
@@ -33,10 +34,12 @@ function express_t(base_path) {
    */
 
   const locale_files = fs.readdirSync(locales_path)
-  for (let i=0; i < locale_files.length; i++) {
+
+  for (let i = 0; i < locale_files.length; i++) {
     let json = JSON.parse(fs.readFileSync(path.join(locales_path, locale_files[i]), "utf8"))
     let json_keys = Object.keys(json)
-    for (let j=0; j < json_keys.length; j++) {
+
+    for (let j = 0; j < json_keys.length; j++) {
       locales[json_keys[j]] = json[json_keys[j]]
     }
   }
@@ -49,9 +52,11 @@ function express_t(base_path) {
     let keys = str.split(".")
     if (!Object.keys(locales).includes(locale)) { throw new Error(`Translations for locale '${locale}' are missing.`) }
     let x = locales[locale]
-    for (let i=0; i < keys.length; i++) {
+
+    for (let i = 0; i < keys.length; i++) {
       if (keys[i] in x) { x = x[keys[i]] } else { return '' }
     }
+
     return x
   }
 }
