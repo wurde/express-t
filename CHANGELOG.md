@@ -12,6 +12,8 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
+## 2018-03-21, Version 1.1.0
+
 * 2 minor enhancements:
 
   js: formatting changes
